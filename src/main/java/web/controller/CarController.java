@@ -12,13 +12,12 @@ import java.util.List;
 
 @Controller
 public class CarController {
-    CarServiceImpl carService;
+    private CarServiceImpl carService;
 
     @Autowired
     public void setCarService(CarServiceImpl carService) {
         this.carService = carService;
     }
-
 
     @GetMapping(value = "/cars")
     public String countCar(@RequestParam(value = "count", required = false) Integer count, ModelMap model) {
