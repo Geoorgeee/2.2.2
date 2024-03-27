@@ -1,12 +1,11 @@
-package web.Service;
+package web.service;
 
 import web.model.Car;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface CarService {
-     static List<Car> countCar(List<Car> cars, int count) {
+/*     static List<Car> countCar(List<Car> cars, int count) {
         if (count > cars.size()){
             count = cars.size();
         }
@@ -15,6 +14,8 @@ public interface CarService {
             cars2.add(cars.get(k));
         }
         return cars2;
-    }
+    }*/
+    List<Car> countCar(List<Car> cars, int count);
+    List<Car> createCar();
 
 }
